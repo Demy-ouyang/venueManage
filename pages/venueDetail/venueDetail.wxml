@@ -1,0 +1,20 @@
+<!--venueDetail.wxml-->
+<view class="wrap wrap-box">
+    <navigator class="ground-group" wx:for="{{venueList}}" wx:key="SID" url="#">
+        <view class="pic-block"><image mode="aspectFill" class="ground-pic" src="{{item.PIC}}"></image></view>
+        <view class="section section-part3">
+            <view class="ground-block">
+                <text class="ground-title">{{item.SNAME}}</text>
+                <text class="ground-p">地址： {{item._SITE_P_}}{{item._SITE_C_}}{{item._SITE_A_}}{{item.SADDRESS}}</text>
+                <text class="ground-p">电话： {{item.PHONE}}</text>
+            </view>
+            <view class="ground-right"><view class="icon-arrow" ></view></view>
+        </view>
+    </navigator>
+
+</view>
+<view class="foot-bar">
+    <text class="foot-link cur" >我的场馆</text>
+    <navigator class="foot-link" open-type="redirect" url="/pages/user/user">个人中心</navigator>
+</view>
+

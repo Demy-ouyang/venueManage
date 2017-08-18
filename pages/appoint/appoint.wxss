@@ -1,0 +1,148 @@
+/* appoint.wxss */
+.scroll-view_H{
+    white-space:nowrap;
+    display: flex;
+    border-bottom:1px solid #e1e1e1;
+    background-color: #fff;
+}
+.date-li{
+    display: inline-block;
+    border-right:1px solid #dadada;
+    position: relative;
+    width:106rpx;
+    margin-top:28rpx;
+    margin-bottom:28rpx;
+    color:#000000;
+}
+.date-li text{
+    display: block;
+    text-align: center;
+}
+.date-li:last-child{
+    border-right:none;
+}
+.day{
+    font-size:24rpx;
+}
+.week{
+    font-size:32rpx;
+}
+.weekend{
+    color:#FF9900;
+}
+.date-cur{
+    color:#05c621;
+}
+.date-cur::after{
+    display: inline-block;
+    content:'';
+    width:100%;
+    height:9rpx;
+    background-color: #05c621;
+    position: absolute;
+    left:0;
+    bottom:-28rpx;
+
+}
+.date-cur .weekend{
+    color:#05c621;
+}
+.appoint-table{
+   position: relative;
+    background-color: #fff;
+    margin-top:30rpx;
+}
+.table-left{
+    width:112rpx;
+}
+.venu-block{
+    display: block;
+    width:100%;
+    text-align: center;
+    height:108rpx;
+    line-height:108rpx;
+    border-bottom:1rpx dotted #99a6aa;
+    color:#000;
+    font-size:24rpx;
+    border-right:1rpx dotted #99a6aa;
+}
+.time-block{
+    display: block;
+    width:100%;
+    text-align: center;
+    border-bottom:1rpx solid #d9dce3;
+    height:56rpx;
+    line-height:56rpx;
+    color:#565656;
+    font-size:28rpx;
+    position: relative;
+}
+.lit-arrow{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    border-width:9rpx;
+    border-style: solid;
+    border-color: transparent transparent #d9dce3 transparent;
+    bottom: 0;
+    left:52rpx;
+}
+.table-right{
+    position: absolute;
+    left:114rpx;
+    right:0;
+    top:0;
+}
+.right-con{
+    white-space:nowrap;
+}
+.right-bar{
+    display: inline-block;
+    width:118rpx;
+    white-space: normal;
+}
+.price-block{
+    display: block;
+    width:100%;
+    text-align: center;
+    height:108rpx;
+    line-height:108rpx;
+    border-right:1rpx dotted #99a6aa;
+    border-bottom:1rpx dotted #99a6aa;
+    font-size:24rpx;
+    color: #05c621;
+}
+.no-price{
+    background: #f1f1f1;
+    text-indent: -9999999rpx;
+}
+.checked{
+    background-color: #c3c3c3;
+    color: #fff;
+}
+.selected{
+    background: #05c621;
+    color: #fff;
+}
+.ordered{
+    background: #ebebeb;
+    color: #c3c3c3;
+    line-height:50rpx;
+    font-size:22rpx;
+}
+.ordered text{
+    display: block;
+}
+.right-bar .time-block{
+    margin-left:-30px;
+}
+.last-right-bar{
+    width:54rpx;
+}
+.last-time{
+    display: block;
+    margin-left:25rpx;
+}
+

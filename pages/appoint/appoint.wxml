@@ -1,0 +1,149 @@
+<!--appoint.wxml-->
+<view class="wrap">
+    <scroll-view class="scroll-view_H" scroll-x="true"  style="width: 100%">
+        <view class="date-li date-cur">
+            <text class="day">03/07</text>
+            <text class="week weekend">六</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/08</text>
+            <text class="week weekend">日</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/09</text>
+            <text class="week">一</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/10</text>
+            <text class="week">二</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/11</text>
+            <text class="week">三</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/12</text>
+            <text class="week">四</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/13</text>
+            <text class="week">五</text>
+        </view>
+        <view class="date-li">
+            <text class="day">03/14</text>
+            <text class="week weekend">六</text>
+        </view>
+
+    </scroll-view>
+    <view class="appoint-table">
+        <view class="table-left">
+            <view class="time-block"></view>
+            <text class="venu-block">1号场地</text>
+            <text class="venu-block">2号场地</text>
+            <text class="venu-block">3号场地</text>
+            <text class="venu-block">4号场地</text>
+        </view>
+        <view class="table-right">
+            <scroll-view scroll-x="true"  class="right-con">
+                <view class="right-bar">
+                    <view class="time-block"></view>
+                    <text class="price-block no-price"> 1 </text>
+                    <text class="price-block no-price"> 1 </text>
+                    <text class="price-block no-price"> 1 </text>
+                    <text class="price-block no-price"> 1 </text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 11:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block ordered">740元<text>已预订</text></text>
+                    <text class="price-block ordered">740元<text>已预订</text></text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 12:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block checked">已占用</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 13:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block selected">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 14:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block selected">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 15:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 16:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 17:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block">740元</text>
+                    <text class="price-block checked">已占用</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar">
+                    <view class="time-block">
+                        <text> 18:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block selected">740元</text>
+                    <text class="price-block">740元</text>
+                    <text class="price-block selected">740元</text>
+                    <text class="price-block">740元</text>
+                </view>
+                <view class="right-bar last-right-bar">
+                    <view class="time-block">
+                        <text class="last-time"> 19:00</text>
+                        <text class="lit-arrow"></text>
+                    </view>
+                    <text class="price-block no-price">1</text>
+                    <text class="price-block no-price">1</text>
+                    <text class="price-block no-price">1</text>
+                    <text class="price-block no-price">1</text>
+                </view>
+            </scroll-view>
+        </view>
+
+    </view>
+</view>

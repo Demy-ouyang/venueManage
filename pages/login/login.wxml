@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="wrap">
+    <view class="section-top">
+        <image mode="aspectFit" src="../images/login_top_img.jpg"></image>
+    </view>
+    <form bindsubmit="formLogin" class="login-box">
+        <view class="login-form">
+            <view class="login-panel">
+                <view class="icon-block"><image mode="aspectFit" class="icon icon-user" src="../images/icon_user.png"></image></view>
+                <view class="input-block"><input name="username" focus="{{usernameFocus}}" value='qwe1@www.bccto.me' placeholder="请输入管理员邮箱账户" class="input-style1" placeholder-class="placeholder" /></view>
+            </view>
+            <view class="login-panel">
+                <view class="icon-block"><image mode="aspectFit" class="icon icon-lock" src="../images/icon_lock.png"></image></view>
+                <view class="input-block"><input name="password" focus="{{passwordFocus}}" value='asd123' password="true" placeholder="请输入密码" class="input-style1" placeholder-class="placeholder" /></view>
+            </view>
+        </view>
+        <view class="login-btn">
+            <button type="primary" loading="{{isSubmiting}}"  formType="submit" class="primary-btn"> 登 录 </button>
+        </view>
+    </form>
+</view>

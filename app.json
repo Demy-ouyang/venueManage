@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/appoint/appoint",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/venueDetail/venueDetail",
+    "pages/detail/detail"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "场地管理",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,15 @@
+/* venueDetail.wxss */
+.pic-block{
+    width:759rpx;
+    height:353rpx;
+}
+.ground-pic{
+    width:100%;
+    height:100%;
+}
+.section-part3{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,128 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+page{
+  background-color: #f3f3f3;
+}
+.wrap{
+ width:100%;
+  height:100%;
+  background-color: #f3f3f3;
+}
+
+.section{
+  position:relative;
+  background-color:#fff;
+  margin-bottom:30rpx;
+  border-top:1rpx solid #eaeaea;
+  border-bottom:1rpx solid #eaeaea;
+  padding-left:30rpx;
+}
+.flex-wrp{
+  display: flex;
+}
+/*横向排列*/
+.flex-row{
+  flex-direction:row;
+}
+/*纵向排列*/
+.flex-col{
+  flex-direction:column;
+}
+/**/
+.text-orange{
+  color:#ff9900;
+}
+.btn{
+  background-color: #05c621;
+  box-shadow: 0 5rpx 30rpx rgba(51,191,72,.5);
+}
+.wrap-box{
+  margin-bottom:69rpx;
+}
+.foot-bar{
+  width:100%;
+  height:98rpx;
+  background-color: #fff;
+  border-top:1rpx solid #eaeaea;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  flex-direction:row;
+}
+.foot-link{
+  color:#434343;
+  font-size:28rpx;
+  flex:50%;
+  text-align: center;
+  padding-top:32rpx;
+}
+.foot-link::after{
+  display: block;
+  content:'';
+  background-color: #eaeaea;
+  width:2rpx;
+  height:26rpx;
+  margin-top:-30rpx;
+}
+
+.foot-link.cur{
+  color:#05c621;
+}
+.section-part3{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.section-panel{
+  position: relative;
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  padding-top:35rpx;
+  padding-bottom:35rpx;
+}
+.ground-block{
+  flex:auto;
+  padding-top:25rpx;
+  padding-bottom:25rpx;
+}
+.ground-title{
+  display: block;
+  color:#000;
+  font-size:32rpx;
+  line-height:60rpx;
+  font-weight:bold;
+}
+.ground-p{
+  display: block;
+  color:#353535;
+  font-size:28rpx;
+  line-height:50rpx;
+}
+.ground-right{
+  width:17rpx;
+  height:30rpx;
+  margin-right:30rpx;
+}
+
+.icon-arrow{
+  content:'';
+  width:17rpx;
+  height:20rpx;
+  border-width:4rpx 4rpx 0 0 ;
+  border-color:#b7b7b7;
+  border-style:solid;
+  transform:rotate(45deg);
+}
