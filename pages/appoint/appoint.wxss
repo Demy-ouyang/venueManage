@@ -50,7 +50,7 @@
 .appoint-table{
    position: relative;
     background-color: #fff;
-    margin-top:30rpx;
+    padding-top:15rpx;
 }
 .table-left{
     width:112rpx;
@@ -93,7 +93,7 @@
     position: absolute;
     left:114rpx;
     right:0;
-    top:0;
+    top:15rpx;
 }
 .right-con{
     white-space:nowrap;
@@ -102,6 +102,7 @@
     display: inline-block;
     width:118rpx;
     white-space: normal;
+    border-bottom:1rpx dotted #99a6aa;
 }
 .price-block{
     display: block;
@@ -145,4 +146,54 @@
     display: block;
     margin-left:25rpx;
 }
-
+.panel-box{
+    padding-top:20rpx;
+    border-top:none;
+}
+.panel-title{
+    color:#353535;
+    font-size:32rpx;
+    height:94rpx;
+    line-height:94rpx;
+}
+.panel-p1{
+    height:90rpx;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    font-size:28rpx;
+    padding-right:30rpx;
+    border-top:1rpx solid #eaeaea;
+    color:#898989;
+}
+.panel-p1:first-child{
+    border-top:none;
+}
+.price{
+    color:#ff9900;
+}
+.panel-p2{
+    justify-content:flex-end;
+    padding-left:30rpx;
+    margin-left:-30rpx;
+}
+.card{
+    color:#ff9900;
+    font-weight:bold;
+    font-size:32rpx;
+}
+.lit-btn-box2{
+    padding-left:30rpx;
+    padding-right:30rpx;
+    margin-top:50rpx;
+    margin-bottom:50px;
+}
+.input-style1{
+    display: inline-block;
+    text-align: right;
+}
+.icon-arrow {
+    float:right;
+    margin-top:15rpx;
+}

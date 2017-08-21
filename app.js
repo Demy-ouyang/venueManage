@@ -31,6 +31,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    pageData: [] // 用于页面间传值
   }
 })

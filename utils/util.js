@@ -49,10 +49,11 @@ var MyAjax = {
 
 module.exports = {
   alert_ok: function (msg, callback) {
-    wx.showToast({ title: msg, success: callback });
+    if (msg) wx.showToast({ title: msg, success: callback });
   },
   alert_err: function (msg, callback) {
     //wx.showToast({ title: msg, image: '/pages/images/icon_error.png', duration: 3500 });
+    if (!msg) return;
     wx.showModal({
       content: msg, showCancel: false, // confirmColor: '#1AAD19',      
       success: function (res) {

@@ -14,7 +14,7 @@
 
 </view>
 <view class="foot-bar">
-    <text class="foot-link cur" >我的场馆</text>
+    <navigator class="foot-link cur" open-type="redirect" url="/pages/venueDetail/venueDetail">我的场馆</navigator>
     <navigator class="foot-link" open-type="redirect" url="/pages/user/user">个人中心</navigator>
 </view>
 

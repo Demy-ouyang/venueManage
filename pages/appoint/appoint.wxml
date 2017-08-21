@@ -37,7 +37,7 @@
     </scroll-view>
     <view class="appoint-table">
         <view class="table-left">
-            <view class="time-block"></view>
+            <view class="time-block">1</view>
             <text class="venu-block">1号场地</text>
             <text class="venu-block">2号场地</text>
             <text class="venu-block">3号场地</text>
@@ -145,5 +145,38 @@
             </scroll-view>
         </view>
 
+    </view>
+    <view class="section panel-box">
+        <view class="panel-p1"><text class="panel-title">已选场地</text></view>
+        <view class="panel-p1">
+            <text class="p1-block">03/07 周一</text>
+            <text class="p1-block">3号场地</text>
+            <text class="p1-block">13：00-14：00</text>
+            <text class="price">￥740</text>
+        </view>
+        <view class="panel-p1">
+            <text class="p1-block">03/07 周一</text>
+            <text class="p1-block">3号场地</text>
+            <text class="p1-block">13：00-14：00</text>
+            <text class="price">￥740</text>
+        </view>
+        <view class="panel-p1 panel-p2">
+            <view class="total">共计：<text class="price">￥1480</text></view>
+        </view>
+    </view>
+    <view class="section">
+        <view class="panel-p1">
+            <text class="panel-title">联系方式</text>
+            <view class="panel-right">
+                <input placeholder="添加联系方式" focus="{{focus}}" class="input-style1"/>
+                <text class="icon-arrow "></text>
+            </view>
+        </view>
+        <view class="panel-p1">
+            <text class="card">会员卡-002125</text>
+        </view>
+    </view>
+    <view class="lit-btn-box2">
+        <button type="primary" class="primary-btn"> 确定 </button>
     </view>
 </view>

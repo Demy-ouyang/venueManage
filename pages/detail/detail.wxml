@@ -2,32 +2,31 @@
 <view class="wrap">
    <view class="section section-part1">
       <view class="flex-item">上地14号足球场</view>
-      <view class="flex-item">2017-09-17 12:52</view>
+      <view class="flex-item">{{obj.DT}}</view>
    </view>
    <view class="section section-part2">
-      <view class="flex-item">
-         <text class="text-desc">2号场地</text>
+      <view class="flex-item" wx:for="{{obj.DETAIL}}" wx:for-item="itemDetail" wx:key="TITLE">
+         <text class="text-desc" style="padding-right: 10px;">{{itemDetail.TITLE}} </text>
+         <text class="text-desc">{{itemDetail.DETAIL}}</text>
       </view>
       <view class="flex-item">
-         <text class="text-desc">2017-09-24上午9：00-11：00星期三</text>
-      </view>
-      <view class="flex-item">
-         <text class="text-desc">会员预定</text>
+         <text class="text-desc">订 单 号：</text>
+         <text class="text-desc">{{obj.ORDER_ID}}</text>
       </view>
       <view class="flex-item">
          <text class="text-desc">联系电话：</text>
-         <text class="text-desc">15699887575</text>
+         <text class="text-desc">{{obj.RECEIVER_PHONE}}</text>
       </view>
       <view class="flex-item">
          <text class="text-desc">操作人员：</text>
-         <text class="text-desc">场地管理员</text>
+         <text class="text-desc">{{obj.USER_NAME != '****' ? obj.USER_NAME : '管理员'}}</text>
       </view>
       <view class="flex-item">
          <text class="text-desc">价　　格：</text>
-         <text class="text-desc text-orange"> ￥1420</text>
+         <text class="text-desc text-orange"> ￥{{obj.PAYMONEY}}</text>
       </view>
       <view class="flex-item">
-         <text class="text-desc">会员消费</text>
+         <text class="text-desc">{{obj.PAYSTYLE}} {{obj.REFUND_STATE  > 0 ? obj.REFUND_STATE : obj.ORDERTYPE}}</text>
       </view>
    </view>
    <view class="p-tips">

@@ -118,6 +118,7 @@ page{
 }
 
 .icon-arrow{
+  display: inline-block;
   content:'';
   width:17rpx;
   height:20rpx;

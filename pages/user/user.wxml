@@ -11,76 +11,42 @@
     <view class="section">
         <navigator class="section-part3"  url="#">
             <view class="ground-block">
-                <text class="ground-p">1场馆XXX</text>
+                <!--<text class="ground-p">1场馆XXX</text>-->
+                <picker bindchange="bindPickerChange" mode="selector"  range="{{ddd}}">
+                    <view class="picker ground-p">
+                        当前选择：场馆XXX
+                    </view>
+                </picker>
             </view>
             <view class="ground-right"><view class="icon-arrow" ></view></view>
         </navigator>
         <view class="user-tablist">
-            <view class="user-tab">
-                <navigator class="active" url="#">全部订单</navigator>
-            </view>
-            <view class="user-tab">
-                <navigator url="#">在线预定</navigator>
-            </view>
-            <view class="user-tab">
-                <navigator  url="#">电话预定</navigator>
-            </view>
+            <view class="user-tab"><text class="{{tab == 0 ? 'active' : ''}}" bindtap="switchTab" data-index="0">全部订单</text></view>
+            <view class="user-tab"><text class="{{tab == 1 ? 'active' : ''}}" bindtap="switchTab" data-index="1">在线预定</text></view>
+            <view class="user-tab"><text class="{{tab == 2 ? 'active' : ''}}" bindtap="switchTab" data-index="2">电话预定</text></view>
         </view>
     </view>
-    <navigator class="section  section-part4" url="#">
-        <view class="ground-block">
+    <view class="section section-part4" wx:for="{{orderList}}" wx:key="ORDER_ID" bindtap="GoDetail" data-index="{{index}}">
+        <view class="ground-block" >
             <view class="ground-title">
                 <text>上地14号足球场</text>
-                <text>2017-09-17 12:52</text>
+                <text>{{item.DT}}</text>
+            </view>
+            <view class="ground-p" wx:for="{{item.DETAIL}}" wx:for-item="itemDetail" wx:key="TITLE">
+                <text>{{itemDetail.TITLE}} </text>
+                <text>{{itemDetail.DETAIL}}</text>
             </view>
             <view class="ground-p">
-                <text>1号场地 </text>
-                <text>2017-09-24上午9：00-11：00星期三</text>
-            </view>
-            <view class="ground-p">
-                <text class="tag1">会员预定</text>
-                <text>管理员操作</text>
+                <text class="tag1">{{item.REFUND_STATE  > 0 ? item.REFUND_STATE : item.ORDERTYPE}}</text>
+                <text>{{item.USER_NAME != '****' ? item.USER_NAME : '管理员操作'}}</text>
             </view>
         </view>
         <view class="ground-right"><view class="icon-arrow"></view></view>
-    </navigator>
-    <navigator class="section  section-part4" url="#">
-        <view class="ground-block">
-            <view class="ground-title">
-                <text>上地14号足球场</text>
-                <text>2017-09-17 12:52</text>
-            </view>
-            <view class="ground-p">
-                <text>1号场地 </text>
-                <text>2017-09-24上午9：00-11：00星期三</text>
-            </view>
-            <view class="ground-p">
-                <text class="tag2">在线预定</text>
-                <text>管理员操作</text>
-            </view>
-        </view>
-        <view class="ground-right"><view class="icon-arrow"></view></view>
-    </navigator>
-    <navigator class="section  section-part4" url="#">
-        <view class="ground-block">
-            <view class="ground-title">
-                <text>上地14号足球场</text>
-                <text>2017-09-17 12:52</text>
-            </view>
-            <view class="ground-p">
-                <text>1号场地 </text>
-                <text>2017-09-24上午9：00-11：00星期三</text>
-            </view>
-            <view class="ground-p">
-                <text class="tag1">会员预定</text>
-                <text>管理员操作</text>
-            </view>
-        </view>
-        <view class="ground-right"><view class="icon-arrow"></view></view>
-    </navigator>
+    </view> 
 
 </view>
 <view class="foot-bar">
-    <navigator class="foot-link" url="pages/venueDetail/venueDetail">我的场馆</navigator>
-    <navigator class="foot-link cur" url="pages/user/user">个人中心</navigator>
+    <navigator class="foot-link" url="/pages/venueDetail/venueDetail">我的场馆</navigator>
+    <navigator class="foot-link cur" url="/pages/user/user">个人中心</navigator>
+
 </view>

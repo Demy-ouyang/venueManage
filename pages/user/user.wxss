@@ -30,7 +30,7 @@
     height:74rpx;
     line-height:74rpx;
     border:2rpx solid #05c621;
-    border-radius:3px;
+   /* border-radius:3px;*/
     color:#05c621;
     font-size:28rpx;
     background-color: #fff;
@@ -51,14 +51,14 @@
     text-align: center;
     flex:0 0 30%;
 }
-.user-tab navigator{
+.user-tab text{
     color:#5d5d5d;
     display: inline-block;
     width: 115rpx;
     padding-top:34rpx;
     padding-bottom:34rpx;
 }
-navigator.active{
+text.active{
     color:#05c621;
     border-bottom:4rpx solid #05c621;
     padding-bottom:30rpx;
